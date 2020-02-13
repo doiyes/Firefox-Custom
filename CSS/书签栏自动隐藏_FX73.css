@@ -23,25 +23,27 @@
   -moz-transition-delay: 0.1s!important; /*设置多少秒后延迟出现*/
 }
 
-或者：来自https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=2169096&pid=45528530
-
-/* Remove pointless thumbnail in the Bookmark popup */
-#editBookmarkPanelImage, #editBookmarkPanelFaviconContainer {
-    display: none !important;
-}
+或者：来自https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=2169096&pid=45535024
 
 /*书签栏自动隐藏*/
-#PersonalToolbar .bookmark-item {
-    margin: 0 !important;
+    #PersonalToolbar {  
+        display: flex !important;
+        max-height: 0 !important;
+        min-height: 0 !important;
+        padding: 0 !important;      
+        position: fixed !important;
+        width: 100% !important;
+    }
+
+    #navigator-toolbox:hover>#PersonalToolbar {
+        max-height: 24px !important;   
+        z-index: 2147483647 !important;     
+    }
+#navigator-toolbox {
+    border: none !important;
 }
 
-#PersonalToolbar {  
-    max-height: 0 !important;
-    min-height: 0 !important;
-    padding: 0 !important;  
-}
-
-#navigator-toolbox:hover>#PersonalToolbar {
-    max-height: 18px !important;
-    min-height: 18px !important;
+#nav-bar {
+    box-shadow: none !important;
+    border-bottom: 1px solid transparent !important;
 }
