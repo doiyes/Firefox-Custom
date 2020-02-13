@@ -22,3 +22,26 @@
   -moz-transition: .1s ease-in !important;
   -moz-transition-delay: 0.1s!important; /*设置多少秒后延迟出现*/
 }
+
+或者：
+
+/* Remove pointless thumbnail in the Bookmark popup */
+#editBookmarkPanelImage, #editBookmarkPanelFaviconContainer {
+    display: none !important;
+}
+
+/*书签栏自动隐藏*/
+#PersonalToolbar .bookmark-item {
+    margin: 0 !important;
+}
+
+#PersonalToolbar {  
+    max-height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;  
+}
+
+#navigator-toolbox:hover>#PersonalToolbar {
+    max-height: 18px !important;
+    min-height: 18px !important;
+}
