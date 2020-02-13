@@ -5,6 +5,7 @@
     // @include              chrome://browser/content/browser.xhtml
     // @include              chrome://browser/content/browser.xul
     // @charset              UTF-8
+    // @source               https://bbs.kafan.cn/thread-2170048-1-1.html
     // ==/UserScript==
     (() => {
         'use strict';
