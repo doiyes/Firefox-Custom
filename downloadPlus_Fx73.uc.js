@@ -11,6 +11,7 @@
 // @include        chrome://mozapps/content/downloads/downloads.xhtml
 // @version        2014.11.02 增加多个功能
 // @version        2014.06.06 add delay to fix for new userChrome.js
+// @source         https://www.firefox.net.cn/read-121336
 // ==/UserScript==
     
 (function() {
