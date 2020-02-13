@@ -1,0 +1,24 @@
+#PersonalToolbar {
+  display: block;
+  z-index: 1;
+  transform: perspective(1000px) rotateX(-90deg);
+  transform-origin: top !important;
+  visibility: hidden !important;
+  padding:3px 2px 2px !important;
+  height:auto !important;
+  width: 100% !important;
+  position: fixed !important;
+  background:-moz-linear-gradient(rgba(245,246,247,255), rgba(245,246,247,255)) !important;  /*位置，背景色*/
+  opacity: 0;
+  -moz-transition:  .1s ease-out !important;
+  -moz-transition-delay: 0.1s!important;  /*设置多少秒bookmark消失*/
+}
+#nav-bar:hover ~ #PersonalToolbar,#PersonalToolbar:hover /*地址栏+标签栏为#navigator-toolbox:hover > */
+{
+  z-index: 1;
+  transform: rotateX(0deg);
+  visibility: visible !important;
+  opacity: 1;   /*动画基于此参数*/
+  -moz-transition: .1s ease-in !important;
+  -moz-transition-delay: 0.1s!important; /*设置多少秒后延迟出现*/
+}
