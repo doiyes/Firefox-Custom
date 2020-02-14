@@ -1,3 +1,4 @@
+火狐安装配置自用收集整理
 # 下载安装
 
 官方FTP：http://ftp.mozilla.org/pub/firefox/
@@ -123,7 +124,7 @@ Gesturefy：鼠标手势扩展，扩展地址：https://github.com/Robbendebiene
 
 # 常用用户脚本（UserScript）
 
-
+视频网HTML5播放小工具：https://greasyfork.org/zh-CN/scripts/30545
 
 
 
@@ -134,18 +135,28 @@ Gesturefy：鼠标手势扩展，扩展地址：https://github.com/Robbendebiene
 # UC脚本(UserChormeJS)
 
 鼠标放在标签栏自动滚动切换.uc.js ——标签栏鼠标悬停切换
+
 AutoPopup.uc.js   ——按钮菜单自动弹出
+
 ClearSearchTerm 1.0.uc.js  ——搜索框自动清空
+
 LoadingBar.uc.js  ——地址栏下方显示当前页面加载进度条
+
 MemoryMonitor.uc.js ——内存监控
+
 DoubleClick-CloseTab.uc.js ——双击关闭标签
+
 downloadPlus.uc.js ——下载增强
+
 EnableAutoLogin.ucjs ——自动登录增强
+
 OpenNewTab.uc.js ——地址栏输入在新标签打开
+
+
 
 # 其他
 
-[Firefox 启用 “自带” 翻译 （Yandex 提供）](https://bbs.kafan.cn/thread-2109497-1-1.html)
+#### [Firefox 启用 “自带” 翻译 （Yandex 提供）](https://bbs.kafan.cn/thread-2109497-1-1.html)
 
 进入：about:config ，没有的首选项的新建，有的话更改值。
 KEY 申请地址， https://tech.yandex.com/keys/get/?service=trnsl 
@@ -161,9 +172,9 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 
 完成后，重启浏览器。
 
-[启用Firefox自带的网页翻译功能](https://bbs.kafan.cn/thread-2165299-1-1.html)
+#### [启用Firefox自带的网页翻译功能](https://bbs.kafan.cn/thread-2165299-1-1.html)
 
-[Firefox 在部分网站上不提示保存密码的解决方法](https://bbs.kafan.cn/thread-2114354-1-1.html)
+#### [Firefox 在部分网站上不提示保存密码的解决方法](https://bbs.kafan.cn/thread-2114354-1-1.html)
 
 像是mail.163.com，输入完用户名、密码并提交表单后，firefox不会提示保存密码
 将表单从ajax提交改为form提交即可，方法是：
