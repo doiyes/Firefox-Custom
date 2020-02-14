@@ -1,4 +1,3 @@
-火狐安装配置自用收集整理
 # 下载安装
 
 官方FTP：http://ftp.mozilla.org/pub/firefox/
@@ -126,11 +125,25 @@ Gesturefy：鼠标手势扩展，扩展地址：https://github.com/Robbendebiene
 
 视频网HTML5播放小工具：https://greasyfork.org/zh-CN/scripts/30545
 
+iqiyi-player-switch：爱奇艺flash播放器与html5播放器切换 https://github.com/gooyie/userscript-iqiyi-player-switch
 
+Super_preloaderPlus_one_New：网页自动翻页  https://github.com/machsix/Super-preloader
 
+anti-redirect：去除各搜索引擎/常用网站的重定向 https://github.com/axetroy/anti-redirect
 
+拒绝二维码登录：https://greasyfork.org/zh-CN/scripts/37988
 
+再见了百家号：https://greasyfork.org/zh-CN/scripts/377144
 
+Jump to Top/Bottom of page with hotkeys：为网页增加向页尾、页首的按钮及快捷键  https://greasyfork.org/zh-CN/scripts/794-jump-to-top-bottom-of-page-with-hotkeys
+
+searchEngineJump：搜索引擎跳转脚本 https://github.com/qxinGitHub/searchEngineJump
+
+Picviewer CE+：在线看图工具，支持图片翻转、旋转、缩放、弹出大图、批量保存 https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce
+
+网盘自动填写密码：https://greasyfork.org/zh-CN/scripts/29762
+
+Search Jump Around：自用 https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js
 
 # UC脚本(UserChormeJS)
 
