@@ -1,4 +1,4 @@
-Forefox配置文件自用收集整理
+Forefox配置文件自用收集整理 doiyes.com
 
 # 下载安装
 
