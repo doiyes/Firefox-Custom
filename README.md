@@ -1,3 +1,5 @@
+Forefox配置文件自用收集整理
+
 # 下载安装
 
 官方FTP：http://ftp.mozilla.org/pub/firefox/
@@ -147,6 +149,26 @@ Search Jump Around：自用 https://github.com/doiyes/Firefox-Custom/blob/master
 
 # UC脚本(UserChormeJS)
 
+### 使用方法：
+
+https://github.com/Endor8/userChrome.js/tree/master/userChrome
+
+config.js  和userChromeJS.js放在Firefox安装根目录下；
+
+ config-prefs.js放在 Firefox 安装根目录\defaults\pref下；
+
+UserChrome.js 放在配置文件夹\chrome下，UC 脚本放入 chrome 文件夹。 
+
+注：FF62之后版本需要在 config-pref.js 加上下面的代码:
+
+```
+pref("general.config.sandbox_enabled", false);
+```
+
+### 自用UC脚本：
+
+https://github.com/doiyes/Firefox-Custom/tree/master/userChromeJS
+
 鼠标放在标签栏自动滚动切换.uc.js ——标签栏鼠标悬停切换
 
 AutoPopup.uc.js   ——按钮菜单自动弹出
@@ -164,6 +186,12 @@ downloadPlus.uc.js ——下载增强
 EnableAutoLogin.ucjs ——自动登录增强
 
 OpenNewTab.uc.js ——地址栏输入在新标签打开
+
+# CSS相关
+
+https://github.com/doiyes/Firefox-Custom/tree/master/CSS
+
+书签栏自动隐藏
 
 
 
@@ -185,8 +213,6 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 
 完成后，重启浏览器。
 
-#### [启用Firefox自带的网页翻译功能](https://bbs.kafan.cn/thread-2165299-1-1.html)
-
 #### [Firefox 在部分网站上不提示保存密码的解决方法](https://bbs.kafan.cn/thread-2114354-1-1.html)
 
 像是mail.163.com，输入完用户名、密码并提交表单后，firefox不会提示保存密码
@@ -203,4 +229,6 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 
 复制代码
 2、现在可以正常输入用户名、密码，点击登录按钮后，firefox会提示保存用户名密码
+
+#### [启用Firefox自带的网页翻译功能](https://bbs.kafan.cn/thread-2165299-1-1.html)
 
