@@ -105,9 +105,9 @@ user_pref("pageThumbs.enabled", false);
 
 uBlock Origin：一款高效的请求过滤工具，不只是一个广告拦截工具。扩展地址：https://github.com/gorhill/uBlock
 
-暴力猴(Violentmonkey )：开源的脚本管理扩展，扩展地址：https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/。脚本库：https://greasyfork.org/
+暴力猴(Violentmonkey )：开源的脚本管理扩展，扩展地址：https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/ 脚本库：https://greasyfork.org/
 
-Stylus：一个用户样式管理器，帮助您重新定义网页样式，扩展地址：https://github.com/openstyles/stylus
+Stylus：一个用户样式管理器，帮助您重新定义网页样式，扩展地址：https://github.com/openstyles/stylus 样式站：https://userstyles.org/
 
 闪耀拖拽：兼容多进程的Firefox拖拽扩展，扩展地址：https://github.com/harytfw/GlitterDrag
 
@@ -259,3 +259,5 @@ browser.translation.bing.clientIdOverride
 由于 Bing 提供的 API 好像挂了，同样不介绍如何申请。
 
 像Chrome一样弹出Google翻译工具栏的扩展Google Translate This：https://github.com/andreicristianpetcu/google_translate_this
+
+#### [全局雅黑字体](https://bbs.kafan.cn/thread-1681393-1-1.html)
