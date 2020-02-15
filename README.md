@@ -257,3 +257,5 @@ browser.translation.bing.clientIdOverride
 的设置项，值为你申请得到的 Bing 翻译的 apiKey 和 clientId
 使用该翻译引擎时将 browser.translation.engine 的值改为 Bing（首字母必须大写）
 由于 Bing 提供的 API 好像挂了，同样不介绍如何申请。
+
+像Chrome一样弹出Google翻译工具栏的扩展Google Translate This：https://github.com/andreicristianpetcu/google_translate_this
