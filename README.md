@@ -230,38 +230,30 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 复制代码
 2、现在可以正常输入用户名、密码，点击登录按钮后，firefox会提示保存用户名密码
 
-#### [启用Firefox自带的网页翻译功能](https://bbs.kafan.cn/thread-2165299-1-1.html)
-理论上讲，量子火狐都能使用，但是将来会不会被砍就不好说了。
-1.先申请翻译API密钥
-https://tech.yandex.com/keys/get/?service=trnsl
+#### [FF 内置翻译功能增强脚本](https://www.firefox.net.cn/read-121267)
 
-2.进入about:config配置页面
+如何开启内置翻译？
+在 about:config 中
+设置 browser.translation.detectLanguage 为 true，
+设置 browser.translation.ui.show 为 true，
 
-3.Yandex翻译新建以下参数
+如果你有 Yandex 翻译的 apiKey
+在 about:config 中新建字符串类型名称为
+browser.translation.yandex.apiKeyOverride
+的设置项，值为你申请得到的 Yandex 翻译的 apiKey
+使用该翻译引擎时将 browser.translation.engine 的值改为 Yandex（首字母必须大写）
+免费申请 Yandex 翻译  apiKey 的地址为 https://tech.yandex.com/keys/get/?service=trnsl
 
-    browser.translation.ui.show = true
-    browser.translation.detectLanguage = true
-    browser.translation.ui.welcomeMessageShown = true
-    browser.translation.engine = Yandex
-    browser.translation.yandex.apiKeyOverride = apiKey
+Google 翻译的新建字符串类型名称为
+browser.translation.google.apiKey
+的设置项，值为你申请得到的 Google 翻译的 apiKey
+使用该翻译引擎时将 browser.translation.engine 的值改为 Google（首字母必须大写，此为默认值）
+由于 Google 翻译 apiKey 为收费的，就不介绍如何申请了。
+小声地提醒一下，Google 翻译的 apiKey 可以在 github 白嫖别人代码中泄漏的，为了防止被滥用关键字自己琢磨一下吧。
 
-
-
-4.Google新建以下参数
-
-    browser.translation.ui.show = true
-    browser.translation.detectLanguage = true
-    browser.translation.ui.welcomeMessageShown = true
-    browser.translation.engine = Google
-    browser.translation.google.apiKey = apiKey
-
-5.Bing翻译新建以下参数
-
-    browser.translation.ui.show = true
-    browser.translation.detectLanguage = true
-    browser.translation.ui.welcomeMessageShown = true
-    browser.translation.engine = Bing
-    browser.translation.bing.apiKeyOverride = apiKey
-    browser.translation.bing.clientIdOverride = clientId
-
-6.重启浏览器随便打开个英文页面就可以翻译了，
+Bing 翻译的分别新建字符串类型名称为
+browser.translation.bing.apiKeyOverride
+browser.translation.bing.clientIdOverride
+的设置项，值为你申请得到的 Bing 翻译的 apiKey 和 clientId
+使用该翻译引擎时将 browser.translation.engine 的值改为 Bing（首字母必须大写）
+由于 Bing 提供的 API 好像挂了，同样不介绍如何申请。
