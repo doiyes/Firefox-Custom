@@ -23,7 +23,7 @@ Hexo Blog Admin  一个基于vue-admin-template的hexo博客后台管理。https
 hexo-myadmin a hexo dashboard plugin, for live hexo server. https://github.com/thesadabc/hexo-myadmin
 hexo-local-admin https://github.com/geekwen/hexo-local-admin
 gopeed 支持多协议（HTTP、BitTorrent）下载的客户端，提供命令行、RESTful API、WebSocket、Go类库方式来使用。 https://github.com/monkeyWie/gopeed
-
+ProxyAdmin ProxyAdmin 是强大的代理服务工具 snail007/goproxy 的控制面板 https://github.com/snail007/proxy_admin_free
 
 
 
