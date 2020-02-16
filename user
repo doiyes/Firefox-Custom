@@ -11,11 +11,10 @@ Editor.md 开源在线 Markdown 编辑器 https://github.com/pandao/editor.md
 Gitalk是一个基于 GitHub Issue 和 Preact 开发的评论插件。https://github.com/gitalk/gitalk
 APlayer a beautiful HTML5 music player http://aplayer.js.org
 hexo-tag-aplayer Embed APlayer in Hexo posts/pages. https://github.com/haiwx/hexo-tag-aplayer
-
-
-
-
-
-
-
+ipv6-hosts Hosts file which is used for improving IPv6 access speed to Google, YouTube, Facebook, Wikipedia, etc. in Mainland China https://github.com/lennylxx/ipv6-hosts
+chinawareblock 国产流氓、娱乐软件和不受欢迎的软件屏蔽工具 https://github.com/sharoue/chinawareblock
+一键翻墙软件合集 https://github.com/gfw-breaker/nogfw
+蓝灯(Lantern) https://github.com/getlantern/download
+UserChrome-Tweaks A community maintained repository of userChrome.css tweaks for Firefox https://github.com/Timvde/UserChrome-Tweaks
+Wox Launcher for Windows, an alternative to Alfred and Launchy. http://wox.one
 
