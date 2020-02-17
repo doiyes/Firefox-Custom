@@ -43,7 +43,7 @@ location.href.startsWith('chrome://browser/content/browser.x') && (function () {
         Edge: {
             enable: true,
             name: "Edge",
-            path: "microsoft-edge",
+            path: "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
             image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACGUlEQVRIibVWr28TcRR/4kQX2vW+7yoQiMoJBAKBqKhATCD4ExATkxMENfFNJknWZL33vkGQCgQJE4glTCAqJiYqlqwp1/u+bzKxBASiAlExUQS90vau15aVT/Lc+34+7/cdwBIoimuK7Ftke6lIBopkgMZ10NhTDOO90ru4sowjEz7HLxW7G2QZLbGhH8rB6szUKwZsz1YgnrGA7dnybKhXVOQu1iWfmLG3leP+08VlMdLMeqjY/vRZ2mhcS5GcI8mPxSKuA1p7afJGVJ+LJkJ2R4riWspZay8g+wpZhlkiZe7vpwVY2sgyUmTvsBlp0NoDrT0/lIPMiACgzP39zIxJBjP92DqRR2PyK5/sk6QfyO4rsm3ktQ2Nvc1semgPJ05BaA8VuQugXhEA4AH1HqJxHWQZbZ/IszyBgOIPCxp+OuXkTEIOAOCTfJ44ktv1G1F9kSmS8+zBkO7fMKbIFcW1fx7TOctMOWn2fxGovOmX0LjvmxKovO+XZgRKzXhnU+TIMkyXZ37ZWEZV3S7kTdFaKJpvj1Np5t2WdVHV7UJ63NzHjQkAACiWbtbSrFKqqm4XlIle5DqNj1jGfbFX2LSvJ6ckgdZewPY5GtdCsr8Wzn+CMl8rxfLlXvN//GkrVwTJ7Sqydxvd4Hn4jaie+2G5rwDA+KqyvVxnuZDd0coC0yVD41qKpavY3Uzbn18Y18Iw3ps+mgl+A9E4JERQR7sXAAAAAElFTkSuQmCC"
         },
         Opera: {
