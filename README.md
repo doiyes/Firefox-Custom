@@ -73,7 +73,7 @@ user_pref("browser.link.open_newwindow.restriction", 0);//新标签页打开链�
 user_pref("browser.search.openintab", true);//搜索栏在新标签页打开
 user_pref("browser.urlbar.openintab", true);//地址栏在新标签页打开
 user_pref("browser.tabs.loadBookmarksInTabs", true);//书签栏在新标签页打开
-
+user_pref("browser.tabs.closeTabByDblclick", true);//双击关闭标签
 
 user_pref("browser.tabs.loadInBackground", true);//中键点击链接后台打开
 //user_pref("browser.search.context.loadInBackground", true);//搜索栏在后台打开
