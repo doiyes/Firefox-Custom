@@ -1,0 +1,18 @@
+/*启用标签计数+列出所有标签：摘自https://www.firefox.net.cn/read-121361*/
+#main-window {
+  counter-reset: tabs;
+}
+  
+.tabbrowser-tab:not(:-moz-any([concealed])) {
+  counter-increment: tabs;
+}
+  
+#alltabs-button {
+  visibility: visible!important;
+  margin-right: -22px !important;
+}
+  
+#alltabs-button:after {
+  content: counter(tabs);
+  display: -moz-box;
+}
