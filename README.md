@@ -8,6 +8,24 @@ Forefox配置文件自用收集整理 doiyes.com
 
 解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。
 
+版本介绍：
+| 正式版
+下载页面：http://www.mozilla.com/en-US/firefox/all.html（选择Chinese (Simplified) 后的下载简体中文）
+FTP下载页面（包含所有历史版本）：http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/
+| ESR版 长期支持版本（Extended Support Release，简称“ESR”）是 Mozilla 专门为那些无法或不愿每隔六周就升级一次的企业打造。Firefox ESR 版的升级周期为42周，而普通 Firefox 的升级周期为6周。
+下载页面：http://www.mozilla.org/en-US/firefox/organizations/all.html（选择Chinese (Simplified) 后的下载简体中文）
+Beta版（测试版）
+下载页面：http://www.mozilla.com/en-US/firefox/all-beta.html （全语言）
+下载页面：http://www.mozilla.org/zh-CN/firefox/beta/（简体中文版）
+Aurora版（开发者版）
+Firefox Aurora 是 Mozilla 基金会推出的更新幅度介于 Beta 和 Nightly Build 之间的版本，方便更多的用户体验新功能。
+从2017年4月开始，Aurora版本正式被取消。
+Nightly版（每夜版）
+Firefox是一个开源的浏览器，有着强大的开发团队和社区支持。Firefox还是一个变化和发展着的浏览器——新功能的引入、旧功能的改进/废除、性能的提升……这一切都需要一个强大的团体，来测试、反馈并参与浏览器的成长历程，有鉴于此，出现了FNB（后来还出现了Hourly Builds，简称FHB）：每一天，Mozilla的编译机器都会把当前最新的Firefox代码生成各个平台下的FNB，放置在FTP上供下载测试。
+下载页面：http://nightly.mozilla.org/
+FTP下载页面：http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/latest-mozilla-central-l10n/
+火狐中国版（谋智网络）
+
 # 配置文件
 
 常用命令行参数（在 Firefox 快捷方式上右键点击属性中的，启动路径后面的参数）：
