@@ -11,7 +11,12 @@ Forefox配置文件自用收集整理 doiyes.com
   - [自用UC脚本](#自用UC脚本)
 - [CSS相关](#CSS相关)
 - [其他](#其他)
-
+  - [Firefox启用“自带”翻译](#Firefox启用“自带”翻译)
+  - [Firefox在部分网站上不提示保存密码的解决方法](#Firefox在部分网站上不提示保存密码的解决方法)
+  - [FF内置翻译功能增强脚本](#FF内置翻译功能增强脚本)
+  - [全局雅黑字体](#全局雅黑字体)
+  
+  
 # 下载安装
 
 官方FTP：http://ftp.mozilla.org/pub/firefox/
@@ -43,7 +48,7 @@ Forefox配置文件自用收集整理 doiyes.com
 
 # 常用设置
 
-### about:config
+### about:config个性化设置
 
 地址栏输入about:config ，打开；搜索------
 
@@ -213,7 +218,7 @@ https://github.com/doiyes/Firefox-Custom/tree/master/CSS
 
 # 其他
 
-#### [Firefox 启用 “自带” 翻译 （Yandex 提供）](https://bbs.kafan.cn/thread-2109497-1-1.html)
+#### [Firefox启用“自带”翻译 （Yandex 提供）](https://bbs.kafan.cn/thread-2109497-1-1.html)
 
 进入：about:config ，没有的首选项的新建，有的话更改值。
 KEY 申请地址， https://tech.yandex.com/keys/get/?service=trnsl 
@@ -229,7 +234,7 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 
 完成后，重启浏览器。
 
-#### [Firefox 在部分网站上不提示保存密码的解决方法](https://bbs.kafan.cn/thread-2114354-1-1.html)
+#### [Firefox在部分网站上不提示保存密码的解决方法](https://bbs.kafan.cn/thread-2114354-1-1.html)
 
 像是mail.163.com，输入完用户名、密码并提交表单后，firefox不会提示保存密码
 将表单从ajax提交改为form提交即可，方法是：
@@ -246,7 +251,7 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 复制代码
 2、现在可以正常输入用户名、密码，点击登录按钮后，firefox会提示保存用户名密码
 
-#### [FF 内置翻译功能增强脚本](https://www.firefox.net.cn/read-121267)
+#### [FF内置翻译功能增强脚本](https://www.firefox.net.cn/read-121267)
 
 如何开启内置翻译？
 在 about:config 中
