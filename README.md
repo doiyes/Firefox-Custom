@@ -11,7 +11,7 @@ Forefox配置文件自用收集整理 doiyes.com
   - [自用UC脚本](#自用UC脚本)
 - [CSS相关](#CSS相关)
 - [其他](#其他)
-  - [Firefox启用“自带”翻译](#Firefox启用“自带”翻译)
+  - [Firefox启用内置翻译](#Firefox启用内置翻译)
   - [Firefox在部分网站上不提示保存密码的解决方法](#Firefox在部分网站上不提示保存密码的解决方法)
   - [FF内置翻译功能增强脚本](#FF内置翻译功能增强脚本)
   - [全局雅黑字体](#全局雅黑字体)
@@ -218,7 +218,7 @@ https://github.com/doiyes/Firefox-Custom/tree/master/CSS
 
 # 其他
 
-#### [Firefox启用“自带”翻译 （Yandex 提供）](https://bbs.kafan.cn/thread-2109497-1-1.html)
+#### [Firefox启用内置翻译 （Yandex 提供）](https://bbs.kafan.cn/thread-2109497-1-1.html)
 
 进入：about:config ，没有的首选项的新建，有的话更改值。
 KEY 申请地址， https://tech.yandex.com/keys/get/?service=trnsl 
