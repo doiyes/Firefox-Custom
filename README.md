@@ -229,7 +229,7 @@ https://github.com/coekuss/quietfox
 
 # 其他
 
-#### [Firefox启用内置翻译-Yandex提供](https://bbs.kafan.cn/thread-2109497-1-1.html)
+ - [Firefox启用内置翻译-Yandex提供](https://bbs.kafan.cn/thread-2109497-1-1.html)
 
 进入：about:config ，没有的首选项的新建，有的话更改值。
 KEY 申请地址， https://tech.yandex.com/keys/get/?service=trnsl 
@@ -245,7 +245,7 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 
 完成后，重启浏览器。
 
-#### [Firefox在部分网站上不提示保存密码的解决方法](https://bbs.kafan.cn/thread-2114354-1-1.html)
+ - [Firefox在部分网站上不提示保存密码的解决方法](https://bbs.kafan.cn/thread-2114354-1-1.html)
 
 像是mail.163.com，输入完用户名、密码并提交表单后，firefox不会提示保存密码
 将表单从ajax提交改为form提交即可，方法是：
@@ -262,7 +262,7 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 复制代码
 2、现在可以正常输入用户名、密码，点击登录按钮后，firefox会提示保存用户名密码
 
-#### [FF内置翻译功能增强脚本](https://www.firefox.net.cn/read-121267)
+ - [FF内置翻译功能增强脚本](https://www.firefox.net.cn/read-121267)
 
 如何开启内置翻译？
 在 about:config 中
@@ -292,4 +292,4 @@ browser.translation.bing.clientIdOverride
 
 像Chrome一样弹出Google翻译工具栏的扩展Google Translate This：https://github.com/andreicristianpetcu/google_translate_this
 
-#### [全局雅黑字体](https://bbs.kafan.cn/thread-1681393-1-1.html)
+ - [全局雅黑字体](https://bbs.kafan.cn/thread-1681393-1-1.html)
