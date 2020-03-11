@@ -120,6 +120,9 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("browser.newtabpage.enabled", true);
 user_pref("pageThumbs.enabled", false);
 ```
+更多可见：
+https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js
+https://github.com/pyllyukko/user.js/blob/master/user.js
 
 # 扩展
 
