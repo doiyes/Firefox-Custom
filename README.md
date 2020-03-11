@@ -165,6 +165,7 @@ UserChrome.js 放在配置文件夹\chrome下，UC 脚本放入 chrome 文件夹
 ```
 pref("general.config.sandbox_enabled", false);
 ```
+userChrome.js 的更新：https://github.com/alice0775/userChrome.js
 
 ### 自用UC脚本：
 
