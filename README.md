@@ -219,7 +219,13 @@ https://github.com/doiyes/Firefox-Custom/tree/master/CSS
 
 书签栏自动隐藏
 
+更多可见：
 
+https://github.com/Timvde/UserChrome-Tweaks
+
+https://github.com/Aris-t2/CustomCSSforFx/tree/master/classic
+
+https://github.com/coekuss/quietfox
 
 # 其他
 
