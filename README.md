@@ -6,7 +6,7 @@ Forefox配置文件自用收集整理 doiyes.com
 - [about:config常用设置](#about:config常用设置)
 - [user.js常用设置](#user.js常用设置)
 - [扩展](#扩展)
-- [用户脚本UserScript](#常用用户脚本UserScript)
+- [用户脚本UserScript](#用户脚本UserScript)
 - [UC脚本UserChormeJS](#UC脚本UserChormeJS)
   - [使用方法](#使用方法)
   - [自用UC脚本](#自用UC脚本)
