@@ -3,8 +3,7 @@ Forefox配置文件自用收集整理 doiyes.com
 
 - [下载安装](#下载安装)
 - [配置文件](#配置文件)
-- [about:config常用设置](#about:config常用设置)
-- [user.js常用设置](#user.js常用设置)
+- [常用设置](#常用设置)
 - [扩展](#扩展)
 - [用户脚本UserScript](#用户脚本UserScript)
 - [UC脚本UserChormeJS](#UC脚本UserChormeJS)
@@ -42,7 +41,9 @@ Forefox配置文件自用收集整理 doiyes.com
 
 更多可见：https://www.firefox.net.cn/read-54673
 
-# about:config常用设置
+# 常用设置
+
+### about:config
 
 地址栏输入about:config ，打开；搜索------
 
@@ -78,7 +79,7 @@ security.dialog_enable_delay  将其值设置为0  扩展安装等待时间 （�
 
 
 
-# user.js常用设置
+### user.js常用设置
 
 ```js
 user_pref("browser.urlbar.trimURLs", false);   //隐藏地址栏 http://前缀？NO
