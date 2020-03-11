@@ -1,5 +1,18 @@
 Forefox配置文件自用收集整理 doiyes.com
 
+
+- [下载安装](#下载安装)
+- [配置文件](#配置文件)
+- [about:config 常用设置](#about:config 常用设置)
+- [user.js常用设置](#user.js常用设置)
+- [扩展](#扩展)
+- [用户脚本（UserScript）](#常用用户脚本（UserScript）)
+- [UC脚本(UserChormeJS)](#UC脚本(UserChormeJS))
+  - [使用方法](#使用方法)
+  - [自用UC脚本](#自用UC脚本)
+- [CSS相关](#CSS相关)
+- [其他](#其他)
+
 # 下载安装
 
 官方FTP：http://ftp.mozilla.org/pub/firefox/
@@ -124,7 +137,7 @@ Youku-HTML5-Player：一个适配优酷的简单易用的HTML5播放器（已停
 
 Gesturefy：鼠标手势扩展，扩展地址：https://github.com/Robbendebiene/Gesturefy
 
-# 常用用户脚本（UserScript）
+# 用户脚本（UserScript）
 
 视频网HTML5播放小工具：https://greasyfork.org/zh-CN/scripts/30545
 
@@ -150,7 +163,7 @@ Search Jump Around：自用 https://github.com/doiyes/Firefox-Custom/blob/master
 
 # UC脚本(UserChormeJS)
 
-### 使用方法：
+### 使用方法
 
 https://github.com/Endor8/userChrome.js/tree/master/userChrome
 
@@ -167,7 +180,7 @@ pref("general.config.sandbox_enabled", false);
 ```
 userChrome.js 的更新：https://github.com/alice0775/userChrome.js
 
-### 自用UC脚本：
+### 自用UC脚本
 
 https://github.com/doiyes/Firefox-Custom/tree/master/userChromeJS
 
