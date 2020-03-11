@@ -3,11 +3,11 @@ Forefox配置文件自用收集整理 doiyes.com
 
 - [下载安装](#下载安装)
 - [配置文件](#配置文件)
-- [about:config 常用设置](#about:config 常用设置)
+- [about:config常用设置](#about:config常用设置)
 - [user.js常用设置](#user.js常用设置)
 - [扩展](#扩展)
-- [用户脚本（UserScript）](#常用用户脚本（UserScript）)
-- [UC脚本(UserChormeJS)](#UC脚本(UserChormeJS))
+- [用户脚本UserScript](#常用用户脚本UserScript)
+- [UC脚本UserChormeJS](#UC脚本UserChormeJS)
   - [使用方法](#使用方法)
   - [自用UC脚本](#自用UC脚本)
 - [CSS相关](#CSS相关)
@@ -42,7 +42,7 @@ Forefox配置文件自用收集整理 doiyes.com
 
 更多可见：https://www.firefox.net.cn/read-54673
 
-# about:config 常用设置
+# about:config常用设置
 
 地址栏输入about:config ，打开；搜索------
 
@@ -137,7 +137,7 @@ Youku-HTML5-Player：一个适配优酷的简单易用的HTML5播放器（已停
 
 Gesturefy：鼠标手势扩展，扩展地址：https://github.com/Robbendebiene/Gesturefy
 
-# 用户脚本（UserScript）
+# 用户脚本UserScript
 
 视频网HTML5播放小工具：https://greasyfork.org/zh-CN/scripts/30545
 
@@ -161,7 +161,7 @@ Picviewer CE+：在线看图工具，支持图片翻转、旋转、缩放、弹�
 
 Search Jump Around：自用 https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js
 
-# UC脚本(UserChormeJS)
+# UC脚本UserChormeJS
 
 ### 使用方法
 
