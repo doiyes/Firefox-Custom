@@ -66,6 +66,8 @@ Forefox配置文件自用收集整理-doiyes.com
 
 更多可见：https://www.firefox.net.cn/read-60535
 
+http://kb.mozillazine.org/About:config_Entries
+
 ### user.js常用设置
 
 ```js
