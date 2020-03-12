@@ -52,18 +52,6 @@ Forefox配置文件自用收集整理-doiyes.com
 
 地址栏输入about:config ，打开；搜索------
 
-新标签页后台运行
- ```
- browser.tabs.loadInBackground
- browser.tabs.loadDivertedInBackground
- browser.tabs.loadBookmarksInBackground
- ```
- 全部设为true
-
-书签在新标签页中打开 `browser.tabs.loadBookmarksInTabs`，双击改为true 
-
-搜索栏搜索在新标签页打开 `browser.search.openintab`  双击改为true
-
 关闭最后一个标签页后不关闭窗口 `browser.tabs.closeWindowWithLastTab`  双击改为true
 
 双击左键关闭当前标签页（火狐61后）`browser.tabs.closeTabByDblclick`  双击改为true 
@@ -74,13 +62,9 @@ Forefox配置文件自用收集整理-doiyes.com
 
 在mozilla页面激活WebExtensions，新建布尔参数：`privacy.resistFingerprinting.block_mozAddonManager` 设置为 true
 
-扩展安装等待时间 `security.dialog_enable_delay`  将其值设置为1000  
-
 破解右键限制 `dom.event.contextmenu.enabled`  双击改为false 
 
 更多可见：https://www.firefox.net.cn/read-60535
-
-
 
 ### user.js常用设置
 
@@ -109,7 +93,7 @@ user_pref("signon.importedFromSqlite", true);
 user_pref("signon.overrideAutocomplete", true);
 
 //extensions
-user_pref("security.dialog_enable_delay", 0); //按装扩展无延时
+user_pref("security.dialog_enable_delay", 1000); //安装扩展延时
 
 pref("browser.bookmarks.max_backups", 1);//书签备份
 
@@ -127,20 +111,19 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 # 扩展
 
  - [uBlock Origin](https://github.com/gorhill/uBlock)：一款高效的请求过滤工具，不只是一个广告拦截工具。
+ - [暴力猴(Violentmonkey)](https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/)：开源的脚本管理扩展。脚本库：https://greasyfork.org/
 
-[暴力猴(Violentmonkey)](https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/)：开源的脚本管理扩展。脚本库：https://greasyfork.org/
+ - [Stylus](https://github.com/openstyles/stylus)：一个用户样式管理器，帮助您重新定义网页样式。样式站：https://userstyles.org/
 
-[Stylu](https://github.com/openstyles/stylus)：一个用户样式管理器，帮助您重新定义网页样式。样式站：https://userstyles.org/
+ - [闪耀拖拽](https://github.com/harytfw/GlitterDrag)：兼容多进程的Firefox拖拽扩展 
 
-[闪耀拖拽](https://github.com/harytfw/GlitterDrag)：兼容多进程的Firefox拖拽扩展 
+ - [Header Editor](https://github.com/FirefoxBar/HeaderEditor)：管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求。[规则](https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor) 来源：https://bbs.kafan.cn/thread-2102524-1-1.html
 
-[Header Editor](https://github.com/FirefoxBar/HeaderEditor)：管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求。[规则](https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor) 来源：https://bbs.kafan.cn/thread-2102524-1-1.html
+ - [Proxy SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega)：代理设置
 
-[Proxy SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega)：代理设置
+ - [Open Tabs Next To Current](https://github.com/sblask/webextension-open-tabs-next-to-current)：Open new tabs to the right of the current one
 
-[Open Tabs Next To Current](https://github.com/sblask/webextension-open-tabs-next-to-current)：Open new tabs to the right of the current one
-
-[Youku-HTML5-Player](https://github.com/esterTion/Youku-HTML5-Player)：一个适配优酷的简单易用的HTML5播放器（已停止维护）
+ - [Youku-HTML5-Player](https://github.com/esterTion/Youku-HTML5-Player)：一个适配优酷的简单易用的HTML5播放器（已停止维护）
 
 备用：
 
