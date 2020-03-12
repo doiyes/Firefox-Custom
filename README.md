@@ -53,32 +53,30 @@ Forefox配置文件自用收集整理-doiyes.com
 地址栏输入about:config ，打开；搜索------
 
 新标签页后台运行
+ ```
  browser.tabs.loadInBackground
  browser.tabs.loadDivertedInBackground
  browser.tabs.loadBookmarksInBackground
+ ```
  全部设为true
 
-书签在新标签页中打开
- browser.tabs.loadBookmarksInTabs，默认为 false，双击改为true 即可在新建标签页打开。
+书签在新标签页中打开 `browser.tabs.loadBookmarksInTabs`，双击改为true 
 
-搜索栏搜索在新标签页打开
- browser.search.openintab  双击改为true
+搜索栏搜索在新标签页打开 `browser.search.openintab`  双击改为true
 
-关闭最后一个标签页后不关闭窗口
- browser.tabs.closeWindowWithLastTab  双击改为true
+关闭最后一个标签页后不关闭窗口 `browser.tabs.closeWindowWithLastTab`  双击改为true
 
-查找自動高亮
- findbar.modalHighlight   双击改为true
- findbar.highlightAll         双击改为true
+双击左键关闭当前标签页（火狐61后）`browser.tabs.closeTabByDblclick`  双击改为true 
 
-自定义标签页宽度（默认 76）
- browser.tabs.tabMinWidth
+查找自动高亮 ` findbar.modalHighlight`，`findbar.highlightAll`  均双击改为true
 
-在mozilla页面激活WebExtensions
- 方法：about:config--新建布尔参数：privacy.resistFingerprinting.block_mozAddonManager 设置为 true
+自定义标签页宽度 `browser.tabs.tabMinWidth`  默认76 
 
-security.dialog_enable_delay  将其值设置为0  扩展安装等待时间 （默认1000）
- dom.event.contextmenu.enabled  双击改为false 破解右键限制
+在mozilla页面激活WebExtensions，新建布尔参数：`privacy.resistFingerprinting.block_mozAddonManager` 设置为 true
+
+扩展安装等待时间 `security.dialog_enable_delay`  将其值设置为1000  
+
+破解右键限制 `dom.event.contextmenu.enabled`  双击改为false 
 
 更多可见：https://www.firefox.net.cn/read-60535
 
@@ -128,21 +126,21 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
 # 扩展
 
-uBlock Origin：一款高效的请求过滤工具，不只是一个广告拦截工具。扩展地址：https://github.com/gorhill/uBlock
+[uBlock Origin](https://github.com/gorhill/uBlock)：一款高效的请求过滤工具，不只是一个广告拦截工具。
 
-暴力猴(Violentmonkey )：开源的脚本管理扩展，扩展地址：https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/ 脚本库：https://greasyfork.org/
+[暴力猴(Violentmonkey)](https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/)：开源的脚本管理扩展。脚本库：https://greasyfork.org/
 
-Stylus：一个用户样式管理器，帮助您重新定义网页样式，扩展地址：https://github.com/openstyles/stylus 样式站：https://userstyles.org/
+[Stylu](https://github.com/openstyles/stylus)：一个用户样式管理器，帮助您重新定义网页样式。样式站：https://userstyles.org/
 
-闪耀拖拽：兼容多进程的Firefox拖拽扩展，扩展地址：https://github.com/harytfw/GlitterDrag
+[闪耀拖拽](https://github.com/harytfw/GlitterDrag)：兼容多进程的Firefox拖拽扩展 
 
-Header Editor：管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求，扩展地址：https://github.com/FirefoxBar/HeaderEditor 规则：https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor 来源：https://bbs.kafan.cn/thread-2102524-1-1.html
+[Header Editor](https://github.com/FirefoxBar/HeaderEditor)：管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求。[规则](https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor) 来源：https://bbs.kafan.cn/thread-2102524-1-1.html
 
-Proxy SwitchyOmega：代理设置，扩展地址：https://github.com/FelisCatus/SwitchyOmega
+[Proxy SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega)：代理设置
 
-Open Tabs Next To Current：Open new tabs to the right of the current one，扩展地址：https://github.com/sblask/webextension-open-tabs-next-to-current
+[Open Tabs Next To Current](https://github.com/sblask/webextension-open-tabs-next-to-current)：Open new tabs to the right of the current one
 
-Youku-HTML5-Player：一个适配优酷的简单易用的HTML5播放器（已停止维护），扩展地址：https://github.com/esterTion/Youku-HTML5-Player
+[Youku-HTML5-Player](https://github.com/esterTion/Youku-HTML5-Player)：一个适配优酷的简单易用的HTML5播放器（已停止维护）
 
 备用：
 
