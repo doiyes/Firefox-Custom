@@ -111,6 +111,7 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 # 扩展
 
  - [uBlock Origin](https://github.com/gorhill/uBlock)：一款高效的请求过滤工具，不只是一个广告拦截工具。
+ 
  - [暴力猴(Violentmonkey)](https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/)：开源的脚本管理扩展。脚本库：https://greasyfork.org/
 
  - [Stylus](https://github.com/openstyles/stylus)：一个用户样式管理器，帮助您重新定义网页样式。样式站：https://userstyles.org/
@@ -127,31 +128,31 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
 备用：
 
-Gesturefy：鼠标手势扩展，扩展地址：https://github.com/Robbendebiene/Gesturefy
+ - [Gesturefy](https://github.com/Robbendebiene/Gesturefy)：鼠标手势扩展
 
 # 用户脚本UserScript
 
-视频网HTML5播放小工具：https://greasyfork.org/zh-CN/scripts/30545
+ - [视频网HTML5播放小工具](https://greasyfork.org/zh-CN/scripts/30545)
 
-iqiyi-player-switch：爱奇艺flash播放器与html5播放器切换 https://github.com/gooyie/userscript-iqiyi-player-switch
+ - [iqiyi-player-switch](https://github.com/gooyie/userscript-iqiyi-player-switch)：爱奇艺flash播放器与html5播放器切换 
 
-Super_preloaderPlus_one_New：网页自动翻页  https://github.com/machsix/Super-preloader
+ - [Super_preloaderPlus_one_New](https://github.com/machsix/Super-preloader)：网页自动翻页  
 
-anti-redirect：去除各搜索引擎/常用网站的重定向 https://github.com/axetroy/anti-redirect
+ - [anti-redirect](https://github.com/axetroy/anti-redirect)：去除各搜索引擎/常用网站的重定向 
 
-拒绝二维码登录：https://greasyfork.org/zh-CN/scripts/37988
+ - [拒绝二维码登录](https://greasyfork.org/zh-CN/scripts/37988)
 
-再见了百家号：https://greasyfork.org/zh-CN/scripts/377144
+ - [再见了百家号](https://greasyfork.org/zh-CN/scripts/377144)
 
-Jump to Top/Bottom of page with hotkeys：为网页增加向页尾、页首的按钮及快捷键  https://greasyfork.org/zh-CN/scripts/794-jump-to-top-bottom-of-page-with-hotkeys
+ - [Jump to Top/Bottom of page with hotkeys](https://greasyfork.org/zh-CN/scripts/794-jump-to-top-bottom-of-page-with-hotkeys)：为网页增加向页尾、页首的按钮及快捷键  
 
-searchEngineJump：搜索引擎跳转脚本 https://github.com/qxinGitHub/searchEngineJump
+ - [searchEngineJump](https://github.com/qxinGitHub/searchEngineJump)：搜索引擎跳转脚本 
 
-Picviewer CE+：在线看图工具，支持图片翻转、旋转、缩放、弹出大图、批量保存 https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce
+ - [Picviewer CE+](https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce)：在线看图工具，支持图片翻转、旋转、缩放、弹出大图、批量保存 
 
-网盘自动填写密码：https://greasyfork.org/zh-CN/scripts/29762
+ - [网盘自动填写密码](https://greasyfork.org/zh-CN/scripts/29762)
 
-Search Jump Around：自用 https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js
+ - [Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js)：自用 
 
 # UC脚本UserChormeJS
 
@@ -159,11 +160,7 @@ Search Jump Around：自用 https://github.com/doiyes/Firefox-Custom/blob/master
 
 https://github.com/Endor8/userChrome.js/tree/master/userChrome
 
-config.js  和userChromeJS.js放在Firefox安装根目录下；
-
- config-prefs.js放在 Firefox 安装根目录\defaults\pref下；
-
-UserChrome.js 放在配置文件夹\chrome下，UC 脚本放入 chrome 文件夹。 
+config.js和userChromeJS.js放在Firefox安装根目录下；config-prefs.js放在 Firefox 安装根目录\defaults\pref下；UserChrome.js 放在配置文件夹\chrome下，UC脚本放入 chrome 文件夹。 
 
 注：FF62之后版本需要在 config-pref.js 加上下面的代码:
 
@@ -176,29 +173,29 @@ userChrome.js 的更新：https://github.com/alice0775/userChrome.js
 
 https://github.com/doiyes/Firefox-Custom/tree/master/userChromeJS
 
-鼠标放在标签栏自动滚动切换.uc.js ——标签栏鼠标悬停切换
+ - 鼠标放在标签栏自动滚动切换.uc.js ——标签栏鼠标悬停切换
 
-AutoPopup.uc.js   ——按钮菜单自动弹出
+ - AutoPopup.uc.js   ——按钮菜单自动弹出
 
-ClearSearchTerm 1.0.uc.js  ——搜索框自动清空
+ - ClearSearchTerm 1.0.uc.js  ——搜索框自动清空
 
-LoadingBar.uc.js  ——地址栏下方显示当前页面加载进度条
+ - LoadingBar.uc.js  ——地址栏下方显示当前页面加载进度条
 
-MemoryMonitor.uc.js ——内存监控
+ - MemoryMonitor.uc.js ——内存监控
 
-DoubleClick-CloseTab.uc.js ——双击关闭标签
+ - DoubleClick-CloseTab.uc.js ——双击关闭标签
 
-downloadPlus.uc.js ——下载增强
+ - downloadPlus.uc.js ——下载增强
 
-EnableAutoLogin.ucjs ——自动登录增强
+ - EnableAutoLogin.ucjs ——自动登录增强
 
-OpenNewTab.uc.js ——地址栏输入在新标签打开
+ - OpenNewTab.uc.js ——地址栏输入在新标签打开
 
 # CSS相关
 
 https://github.com/doiyes/Firefox-Custom/tree/master/CSS
 
-书签栏自动隐藏
+ - 书签栏自动隐藏
 
 更多可见：
 
