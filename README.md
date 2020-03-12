@@ -232,14 +232,15 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 
 1、鼠标移至登录按钮上，右键，“查看元素”，源代码是
 
-    <a href="javascript:void(0);" id="dologin" data-action="dologin" class="u-loginbtn btncolor tabfocus btndisabled" tabindex="8">登  录</a>
-
-复制代码
+```
+<a href="javascript:void(0);" id="dologin" data-action="dologin" class="u-loginbtn btncolor tabfocus btndisabled" tabindex="8">登  录</a>
+```
 将标签从a改为input并添加type="submit"属性，即改为
 
-    <input href="javascript:void(0);" id="dologin" data-action="dologin" class="u-loginbtn btncolor tabfocus btndisabled" tabindex="8" type="submit">登  录</input>
+```
+<input href="javascript:void(0);" id="dologin" data-action="dologin" class="u-loginbtn btncolor tabfocus btndisabled" tabindex="8" type="submit">登  录</input>
+```
 
-复制代码
 2、现在可以正常输入用户名、密码，点击登录按钮后，firefox会提示保存用户名密码
 
  - [FF内置翻译功能增强脚本](https://www.firefox.net.cn/read-121267)
@@ -261,7 +262,7 @@ browser.translation.google.apiKey
 的设置项，值为你申请得到的 Google 翻译的 apiKey
 使用该翻译引擎时将 browser.translation.engine 的值改为 Google（首字母必须大写，此为默认值）
 由于 Google 翻译 apiKey 为收费的，就不介绍如何申请了。
-小声地提醒一下，Google 翻译的 apiKey 可以在 github 白嫖别人代码中泄漏的，为了防止被滥用关键字自己琢磨一下吧。
+| 小声地提醒一下，Google 翻译的 apiKey 可以在 github 白嫖别人代码中泄漏的，为了防止被滥用关键字自己琢磨一下吧。
 
 Bing 翻译的分别新建字符串类型名称为
 browser.translation.bing.apiKeyOverride
