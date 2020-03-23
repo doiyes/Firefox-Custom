@@ -150,7 +150,7 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
  - [Picviewer CE+](https://greasyfork.org/zh-CN/scripts/24204)：在线看图工具，支持图片翻转、旋转、缩放、弹出大图、批量保存 
 
- - [网盘自动填写密码](https://greasyfork.org/zh-CN/scripts/29762)
+ - [网盘自动填写密码](https://greasyfork.org/zh-CN/scripts/29762)：智能融合网盘密码到网址中，并自动提交密码
 
  - [soTab](https://greasyfork.org/zh-CN/scripts/14856)：搜索引擎跳转，搜索引擎一键切换。备用：[Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js) 或者 [searchEngineJump](https://greasyfork.org/zh-CN/scripts/27752)   
  
