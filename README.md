@@ -134,7 +134,7 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
 # 用户脚本UserScript
 
- - [视频网HTML5播放小工具](https://greasyfork.org/zh-CN/scripts/30545)
+ - [视频网HTML5播放小工具](https://greasyfork.org/zh-CN/scripts/30545)：启用HTML5播放；万能网页全屏；添加快捷键
 
  - [iqiyi-player-switch](https://github.com/gooyie/userscript-iqiyi-player-switch)：爱奇艺flash播放器与html5播放器切换 
 
@@ -142,19 +142,23 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
  - [anti-redirect](https://github.com/axetroy/anti-redirect)：去除各搜索引擎/常用网站的重定向 
 
- - [拒绝二维码登录](https://greasyfork.org/zh-CN/scripts/37988)
+ - [拒绝二维码登录](https://greasyfork.org/zh-CN/scripts/37988)：默认使用账号密码登录，不出现二维码登录界面
 
- - [再见了百家号](https://greasyfork.org/zh-CN/scripts/377144)
+ - [再见了百家号](https://greasyfork.org/zh-CN/scripts/377144)：搜索排除百家号
 
- - [Jump to Top/Bottom of page with hotkeys](https://greasyfork.org/zh-CN/scripts/794-jump-to-top-bottom-of-page-with-hotkeys)：为网页增加向页尾、页首的按钮及快捷键  
+ - [Jump to Top/Bottom of page with hotkeys](https://greasyfork.org/zh-CN/scripts/794)：为网页增加向页尾、页首的按钮及快捷键  
 
- - [Picviewer CE+](https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce)：在线看图工具，支持图片翻转、旋转、缩放、弹出大图、批量保存 
+ - [Picviewer CE+](https://greasyfork.org/zh-CN/scripts/24204)：在线看图工具，支持图片翻转、旋转、缩放、弹出大图、批量保存 
 
  - [网盘自动填写密码](https://greasyfork.org/zh-CN/scripts/29762)
 
- - [soTab](https://greasyfork.org/zh-CN/scripts/14856-sotab-search-engine-switcher)：搜索引擎跳转，搜索引擎一键切换。备用：[Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js) 或者 [searchEngineJump](https://github.com/qxinGitHub/searchEngineJump)   
+ - [soTab](https://greasyfork.org/zh-CN/scripts/14856)：搜索引擎跳转，搜索引擎一键切换。备用：[Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js) 或者 [searchEngineJump](https://greasyfork.org/zh-CN/scripts/27752)   
  
- - [网页限制解除](https://greasyfork.org/zh-CN/scripts/28497-remove-web-limits-modified):解除网站禁止复制、剪切、选择文本、右键菜单的限制，采用黑名单制度，只对黑名单网站使用。
+ - [网页限制解除](https://greasyfork.org/zh-CN/scripts/28497):解除网站禁止复制、剪切、选择文本、右键菜单的限制（黑名单版）
+ 
+ - [CSDN净化](https://greasyfork.org/zh-CN/scripts/378351)：屏蔽掉所有烦人的CSDN广告, 并自动展开内容
+  
+ - [斗鱼清爽版](https://greasyfork.org/zh-CN/scripts/390452)：斗鱼精简，真实人数显示，默认最高画质
 
 # UC脚本UserChromeJS
 
