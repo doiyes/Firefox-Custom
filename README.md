@@ -6,7 +6,7 @@ Forefox配置文件自用收集整理-doiyes.com
 - [常用设置](#常用设置)
 - [扩展](#扩展)
 - [用户脚本UserScript](#用户脚本UserScript)
-- [UC脚本UserChormeJS](#UC脚本UserChormeJS)
+- [UC脚本UserChormeJS](#UC脚本UserChromeJS)
   - [使用方法](#使用方法)
   - [自用UC脚本](#自用UC脚本)
 - [CSS相关](#CSS相关)
@@ -156,7 +156,7 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
  - [Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js)：自用 
 
-# UC脚本UserChormeJS
+# UC脚本UserChromeJS
 
 ### 使用方法
 
