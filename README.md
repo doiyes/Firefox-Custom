@@ -162,7 +162,7 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
  
  - [Bilibili Evolved](https://greasyfork.org/zh-CN/scripts/373563)：强大的哔哩哔哩增强脚本
   
- - [CNKI PDF全文下载](https://greasyfork.org/zh-CN/scripts/18842)：CNKI 中国知网 PDF 全文下载（特制版）
+ - [知网下载助手](https://greasyfork.org/zh-CN/scripts/371938)：解析CNKI论文PDF格式下载地址，caj格式下载链接替换为pdf链接
 
 # UC脚本UserChromeJS
 
