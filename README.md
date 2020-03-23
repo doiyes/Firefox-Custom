@@ -148,13 +148,13 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
  - [Jump to Top/Bottom of page with hotkeys](https://greasyfork.org/zh-CN/scripts/794-jump-to-top-bottom-of-page-with-hotkeys)：为网页增加向页尾、页首的按钮及快捷键  
 
- - [searchEngineJump](https://github.com/qxinGitHub/searchEngineJump)：搜索引擎跳转脚本 
-
  - [Picviewer CE+](https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce)：在线看图工具，支持图片翻转、旋转、缩放、弹出大图、批量保存 
 
  - [网盘自动填写密码](https://greasyfork.org/zh-CN/scripts/29762)
 
- - [Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js)：自用 
+ - 搜索引擎跳转[soTab](https://greasyfork.org/zh-CN/scripts/14856-sotab-search-engine-switcher)
+ 
+   备用：[Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js)  [searchEngineJump](https://github.com/qxinGitHub/searchEngineJump)   
 
 # UC脚本UserChromeJS
 
