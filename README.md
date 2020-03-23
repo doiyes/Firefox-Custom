@@ -159,6 +159,8 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
  - [CSDN净化](https://greasyfork.org/zh-CN/scripts/378351)：屏蔽掉所有烦人的CSDN广告, 并自动展开内容
   
  - [斗鱼清爽版](https://greasyfork.org/zh-CN/scripts/390452)：斗鱼精简，真实人数显示，默认最高画质
+ 
+ - [Bilibili Evolved](https://greasyfork.org/zh-CN/scripts/373563)：强大的哔哩哔哩增强脚本
 
 # UC脚本UserChromeJS
 
