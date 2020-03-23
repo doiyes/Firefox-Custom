@@ -161,6 +161,8 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
  - [斗鱼清爽版](https://greasyfork.org/zh-CN/scripts/390452)：斗鱼精简，真实人数显示，默认最高画质
  
  - [Bilibili Evolved](https://greasyfork.org/zh-CN/scripts/373563)：强大的哔哩哔哩增强脚本
+  
+ - [CNKI PDF全文下载](https://greasyfork.org/zh-CN/scripts/18842)：CNKI 中国知网 PDF 全文下载（特制版）
 
 # UC脚本UserChromeJS
 
