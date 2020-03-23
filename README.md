@@ -153,6 +153,8 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
  - [网盘自动填写密码](https://greasyfork.org/zh-CN/scripts/29762)
 
  - [soTab](https://greasyfork.org/zh-CN/scripts/14856-sotab-search-engine-switcher)：搜索引擎跳转，搜索引擎一键切换。备用：[Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js) 或者 [searchEngineJump](https://github.com/qxinGitHub/searchEngineJump)   
+ 
+ - [网页限制解除](https://greasyfork.org/zh-CN/scripts/28497-remove-web-limits-modified):解除网站禁止复制、剪切、选择文本、右键菜单的限制，采用黑名单制度，只对黑名单网站使用。
 
 # UC脚本UserChromeJS
 
