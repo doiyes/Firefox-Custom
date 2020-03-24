@@ -152,7 +152,7 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
  - [网盘自动填写密码](https://greasyfork.org/zh-CN/scripts/29762)：智能融合网盘密码到网址中，并自动提交密码
 
- - [soTab](https://greasyfork.org/zh-CN/scripts/14856)：搜索引擎跳转，搜索引擎一键切换。备用：[Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js) 或者 [searchEngineJump](https://greasyfork.org/zh-CN/scripts/27752)   
+ - [soTab](https://greasyfork.org/zh-CN/scripts/14856)：搜索引擎跳转，搜索引擎一键切换(修改部分样式为：`.soTab a{margin-right: 1em;}`即rem改为em即可)。备用：[Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js) 或者 [searchEngineJump](https://greasyfork.org/zh-CN/scripts/27752)   
  
  - [网页限制解除](https://greasyfork.org/zh-CN/scripts/28497):解除网站禁止复制、剪切、选择文本、右键菜单的限制（黑名单版）
  
