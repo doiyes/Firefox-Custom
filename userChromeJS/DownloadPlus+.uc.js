@@ -4,8 +4,11 @@
 // @author         w13998686967再次修改整合 (ywzhaiqi、黒仪大螃蟹、Alice0775、紫云飞)
 // @include        chrome://browser/content/browser.xhtml
 // @include        chrome://browser/content/places/places.xul
+// @include        chrome://browser/content/places/places.xhtml
 // @include        chrome://mozapps/content/downloads/unknownContentType.xul
+// @include        chrome://mozapps/content/downloads/unknownContentType.xhtml
 // @include        chrome://mozapps/content/downloads/downloads.xul
+// @include        chrome://mozapps/content/downloads/downloads.xhtml
 // @version        2014.11.02 增加多个功能
 // @version        2014.06.06 add delay to fix for new userChrome.js
 // ==/UserScript==
@@ -35,6 +38,7 @@
             }, 200);
             break;
         case "chrome://mozapps/content/downloads/unknownContentType.xul":
+        case "chrome://mozapps/content/downloads/unknownContentType.xhtml":
             setTimeout(function() {
                 save_And_Open(); // 保存并打开
                 download_dialog_changeName(); // 下载改名
@@ -46,6 +50,7 @@
             }, 200);
             break;
         case "chrome://browser/content/places/places.xul":
+        case "chrome://browser/content/places/places.xhtml":
             setTimeout(function() {
                 new_Download(); // 新建下载(我的足迹)
                 downloadsPanel_removeFile(); // 从硬盘中删除(我的足迹)
@@ -53,6 +58,7 @@
             break;
     }
     
+    const dialogElement = document.documentElement.getButton ? document.documentElement : document.getElementById('unknownContentType');
     
     // 下载完成提示音
     function downloadSound_Play() {
@@ -162,7 +168,7 @@
                 }, false);
             })();
     
-            location == "chrome://browser/content/places/places.xul" && (function() {
+            location.href.startsWith("chrome://browser/content/places/places.x") && (function() {
                 var button = document.querySelector("#placesToolbar").insertBefore(document.createXULElement("toolbarbutton"), document.querySelector("#clearDownloadsButton"));
                 button.id = "createNewDownload";
                 button.label = "新建下载";
@@ -305,7 +311,7 @@
             document.querySelector("#downloadsContextMenu").addEventListener("popupshowing", this.removeMenu3, false);
         },
         init:function () {
-            if (location != "chrome://browser/content/places/places.xul") {
+            if (!location.href.startsWith("chrome://browser/content/places/places.x")) {
                     
                 DownloadsPanel._openPopupIfDataReadyOrg = DownloadsPanel._openPopupIfDataReady;
                 DownloadsPanel._openPopupIfDataReady = function(){
@@ -382,15 +388,15 @@
     
     // 保存并打开
     function save_And_Open() {
-            var saveAndOpen = document.documentElement.getButton("extra2");
-            saveAndOpen.parentNode.insertBefore(saveAndOpen, document.documentElement.getButton("accept").nextSibling);
+            var saveAndOpen = dialogElement.getButton("extra2");
+            saveAndOpen.parentNode.insertBefore(saveAndOpen, dialogElement.getButton("accept").nextSibling);
             saveAndOpen.setAttribute("hidden", "false");
             saveAndOpen.setAttribute("label", "\u4FDD\u5B58\u5E76\u6253\u5F00");
             saveAndOpen.addEventListener("command", () => {
                 Services.wm.getMostRecentWindow("navigator:browser").saveAndOpen.urls.push(dialog.mLauncher.source.asciiSpec);
                 document.querySelector("#save").click();
-                document.documentElement.getButton("accept").disabled=0;
-                document.documentElement.getButton("accept").click()
+                dialogElement.getButton("accept").disabled=0;
+                dialogElement.getButton("accept").click()
             });
         }
         //作用于 main 窗口
@@ -429,7 +435,7 @@
     // 下载改名
     function download_dialog_changeName() {
             //注:同时关闭改名和下拉菜单会导致下载文件的文件名不显示(非要关闭请默认在28行最前面加//来注释掉该功能)
-            if (location != "chrome://mozapps/content/downloads/unknownContentType.xul") return;
+            if (!location.href.startsWith("chrome://mozapps/content/downloads/unknownContentType.x")) return;
             document.querySelector("#mode").addEventListener("select", function() {
                 if (dialog.dialogElement("save").selected) {
                     if (!document.querySelector("#locationtext")) {
@@ -448,7 +454,7 @@
                             if (encodingConvert)
                                 locationtext = document.createXULElement("menulist");
                             else
-                                locationtext = document.createXULElement("textbox");
+                                locationtext = document.createElementNS("http://www.w3.org/1999/xhtml", "html:input");
                             locationtext.id = "locationtext";
                             if (rename && encodingConvert)
                                 locationtext.setAttribute("editable", "true");
@@ -555,7 +561,7 @@
     
     // 另存为...
     function download_dialog_saveas() {
-        var saveas = document.documentElement.getButton("extra1");
+        var saveas = dialogElement.getButton("extra1");
             saveas.setAttribute("hidden", "false");
             saveas.setAttribute("label", "\u53E6\u5B58\u4E3A");
             saveas.addEventListener("command", function() {
@@ -600,7 +606,7 @@
         ["E:\\", "E盘"],
         ["F:\\", "F盘"]
         ];
-        var saveTo = document.documentElement._buttons.cancel.parentNode.insertBefore(document.createXULElement("button"), document.documentElement._buttons.cancel);
+        var saveTo = dialogElement._buttons.cancel.parentNode.insertBefore(document.createXULElement("button"), dialogElement._buttons.cancel);
         var saveToMenu = saveTo.appendChild(document.createXULElement("menupopup"));
         saveTo.classList.toggle("dialog-button");
         saveTo.label = "\u4FDD\u5B58\u5230";
@@ -636,7 +642,7 @@
     // 下载弹出窗口双击保存文件项执行下载
     function download_dialog_doubleclicksaveL() {
         addEventListener("dblclick", function(event) {
-            event.target.nodeName === "radio" && document.documentElement.getButton("accept").click()
+            event.target.nodeName === "radio" && dialogElement.getButton("accept").click()
         }, false)
     }
     
