@@ -283,5 +283,9 @@ browser.translation.bing.clientIdOverride
 
 -  [DNS-over-HTTPS(DoH)+ESNI](https://bbs.kafan.cn/thread-2174452-1-1.html) 解决GitHub连接问题
 
+-  广告过滤规则
+ - [乘风规则](https://bbs.kafan.cn/thread-1866845-1-1.html) 精简规则、视频规则、UBO动态规则
+ - [cjxlist规则](https://github.com/cjx82630/cjxlist)  
+ - [常用广告过滤规则汇总](https://gitee.com/ADList/NoADList)  
 
 -  [全局雅黑字体](https://bbs.kafan.cn/thread-1681393-1-1.html)
