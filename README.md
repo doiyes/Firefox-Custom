@@ -281,7 +281,7 @@ browser.translation.bing.clientIdOverride
 
 像Chrome一样弹出Google翻译工具栏的扩展Google Translate This：https://github.com/andreicristianpetcu/google_translate_this
 
--  * [DNS-over-HTTPS(DoH)+ESNI](https://bbs.kafan.cn/thread-2174452-1-1.html) 解决GitHub连接问题
+-  [DNS-over-HTTPS(DoH)+ESNI](https://bbs.kafan.cn/thread-2174452-1-1.html) 解决GitHub连接问题
 
 
--  * [全局雅黑字体](https://bbs.kafan.cn/thread-1681393-1-1.html)
+-  [全局雅黑字体](https://bbs.kafan.cn/thread-1681393-1-1.html)
