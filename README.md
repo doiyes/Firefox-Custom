@@ -293,7 +293,11 @@ browser.translation.bing.clientIdOverride
 
 
 -  全局雅黑字体
+
 强制雅黑：https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=1664505&pid=30282384
+
 字体替换一：https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=1664505&pid=30315464
+
 字体替换二：https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=1647873&pid=29892002
+
 全局雅黑最佳方案：https://bbs.kafan.cn/thread-1681393-1-1.html
