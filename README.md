@@ -285,9 +285,15 @@ browser.translation.bing.clientIdOverride
 
 -  [分享个人总结的hosts与自带防火墙列表](https://bbs.kafan.cn/thread-2115085-1-1.html)
 
--  [全局雅黑字体](https://bbs.kafan.cn/thread-1681393-1-1.html)
+
 -  广告过滤规则
   - [乘风规则](https://bbs.kafan.cn/thread-1866845-1-1.html) 精简规则、视频规则、UBO动态规则
   - [cjxlist规则](https://github.com/cjx82630/cjxlist)  
   - [常用广告过滤规则汇总](https://gitee.com/ADList/NoADList)  
 
+
+-  全局雅黑字体
+强制雅黑：https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=1664505&pid=30282384
+字体替换一：https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=1664505&pid=30315464
+字体替换二：https://bbs.kafan.cn/forum.php?mod=redirect&goto=findpost&ptid=1647873&pid=29892002
+全局雅黑最佳方案：https://bbs.kafan.cn/thread-1681393-1-1.html
