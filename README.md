@@ -1,56 +1,93 @@
 Forefox配置文件自用收集整理-doiyes.com
 
 > 索引
+
 - [下载安装](#下载安装)
+
 - [配置文件参数](#配置文件参数)
+
 - [常用设置](#常用设置)
+
 - [扩展](#扩展)
+
 - [用户脚本UserScript](#用户脚本UserScript)
+
 - [UC脚本UserChormeJS](#UC脚本UserChromeJS)
+
   - [使用方法](#使用方法)
   - [自用UC脚本](#自用UC脚本)
+
 - [CSS相关](#CSS相关)
+
 - [其他](#其他)
+
   - Firefox启用内置翻译-Yandex提供
   - Firefox在部分网站上不提示保存密码的解决方法
   - FF内置翻译功能增强脚本
   - 全局雅黑字体
-  
-  
-# 下载安装
 
-官方FTP：http://ftp.mozilla.org/pub/firefox/
+  
+
+### 下载安装
+
+官方FTP：http://archive.mozilla.org/pub/firefox/
 
 官网：https://www.mozilla.org/en-US/firefox/all/
 
 解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。
 
+移动版(第三方iceraven)：https://github.com/fork-maintainers/iceraven-browser/releases
 
-# 配置文件参数
 
-常用命令行参数（在 Firefox 快捷方式上右键点击属性中的，启动路径后面的参数）：
+### 配置文件参数
 
-**-ProfileManager** 或 **-P** -- 打开内置的配置管理器界面。
+常用命令行参数（在 Firefox 快捷方式上右键点击属性中的，启动路径后面的参数。‘-p’前有空格）：
 
--**P "配置名"** -- 使用自定义名称的配置来启动 Firefox。如果这个配置名不存在，则打开配置管理器。如果有其他 Firefox 实例正在运行，则该参数无法生效。
+**-ProfileManager** 或 **-P** ：打开内置的配置管理器界面。
 
-**-no-remote** -- 在 -P 后面添加这个参数，可以创建一个新的实例，实现同时使用多个Firefox 配置。如：
+-**P "配置名"**：使用自定义名称的配置来启动 Firefox。如果这个配置名不存在，则打开配置管理器。如果有其他 Firefox 实例正在运行，则该参数无法生效。
+
+**-no-remote**： 在 -P 后面添加这个参数，可以创建一个新的实例，实现同时使用多个Firefox 配置。如：
 
 "D:\Program File\Firefox\firefox.exe" -p
 
 "D:\Program File\Firefox\firefox.exe" --no-remote -profile "doiyes"
 
+-no-remote -Profile "D:\Program Files\MyFirefox\Profiles"
+
 **-private** -- 始终在隐私浏览模式启动 Firefox。
 
 **-safe-mode** -- 安全模式启动 Firefox，或者按住 Shift 键打开 Firefox 也可以。 
 
+**-url ** -- “地址” 指定火狐启动打开某一网页 -url可以省略.例如 "D:\Program File\Firefox\firefox.exe" www.doiyes.com
+
 更多可见：https://www.firefox.net.cn/read-54673
 
-# 常用设置
+安装新版本后，无法使用修改配置文件夹下有个compatibility.ini的文件，改下版本号就可以了。
 
-### about:config个性化设置
+### 常用设置
+
+#### about:config个性化设置
 
 地址栏输入about:config ，打开；搜索------
+
+新标签页后台运行
+ browser.tabs.loadInBackground
+ browser.tabs.loadDivertedInBackground
+ browser.tabs.loadBookmarksInBackground
+ 全部设为true
+
+书签在新标签页中打开
+ browser.tabs.loadBookmarksInTabs，默认为 false，双击改为true 即可在新建标签页打开。
+
+搜索栏搜索在新标签页打开
+ browser.search.openintab  双击改为true
+
+在mozilla页面激活WebExtensions
+ 方法：about:config--新建布尔参数：privacy.resistFingerprinting.block_mozAddonManager 设置为 true
+
+security.dialog_enable_delay  将其值设置为0  扩展安装等待时间 （默认1000）
+ dom.event.contextmenu.enabled  双击改为false 破解右键限制
 
 关闭最后一个标签页后不关闭窗口 `browser.tabs.closeWindowWithLastTab`  双击改为true
 
@@ -64,15 +101,18 @@ Forefox配置文件自用收集整理-doiyes.com
 
 破解右键限制 `dom.event.contextmenu.enabled`  双击改为false 
 
+
+
 更多可见：https://www.firefox.net.cn/read-60535
 
 http://kb.mozillazine.org/About:config_Entries
 
-### user.js常用设置
+#### user.js常用设置
 
 ```js
 user_pref("browser.urlbar.trimURLs", false);   //隐藏地址栏 http://前缀？NO
 
+user_pref("browser.tabs.insertAfterCurrent", true);//紧邻当前标签页打开
 user_pref("browser.link.open_newwindow.restriction", 0);//新标签页打开链接,而不是窗口
 user_pref("browser.search.openintab", true);//搜索栏在新标签页打开
 user_pref("browser.urlbar.openintab", true);//地址栏在新标签页打开
@@ -85,6 +125,7 @@ user_pref("browser.tabs.loadInBackground", true);//中键点击链接后台打�
 //user_pref("browser.tabs.loadDivertedInBackground", true);//外部链接后台打开
 
 user_pref("browser.cache.disk.parent_directory","C:\\TEMP");//缓存位置位于该处制定目录下的cache文件夹内
+user_pref("browser.cache.offline.parent_directory","C:\\TEMP");//cache2文件
 
 //密码
 user_pref("signon.autofillForms", true);  //自动填写登录表单？
@@ -96,6 +137,7 @@ user_pref("signon.overrideAutocomplete", true);
 
 //extensions
 user_pref("security.dialog_enable_delay", 1000); //安装扩展延时
+user_pref("extensions.getAddons.cache.enabled", false); //扩展页面不显示自动推荐内容
 
 pref("browser.bookmarks.max_backups", 1);//书签备份
 
@@ -104,39 +146,30 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("browser.newtabpage.enabled", true);
 user_pref("pageThumbs.enabled", false);
 ```
+
 更多可见：
 
 https://github.com/ghacksuserjs/ghacks-user.js/blob/master/user.js
 
 https://github.com/pyllyukko/user.js/blob/master/user.js
 
-# 扩展
+### 扩展
 
  - [uBlock Origin](https://github.com/gorhill/uBlock)：一款高效的请求过滤工具，不只是一个广告拦截工具。
- 
  - [暴力猴(Violentmonkey)](https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/)：开源的脚本管理扩展。脚本库：https://greasyfork.org/
-
  - [Stylus](https://github.com/openstyles/stylus)：一个用户样式管理器，帮助您重新定义网页样式。样式站：https://userstyles.org/
-
  - [闪耀拖拽](https://github.com/harytfw/GlitterDrag)：兼容多进程的Firefox拖拽扩展 
-
  - [Header Editor](https://github.com/FirefoxBar/HeaderEditor)：管理浏览器请求，包括修改请求头和响应头、重定向请求、取消请求。[规则](https://github.com/dupontjoy/customization/tree/master/Rules/HeaderEditor) 来源：https://bbs.kafan.cn/thread-2102524-1-1.html
-
  - [Proxy SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega)：代理设置
-
- - [Open Tabs Next To Current](https://github.com/sblask/webextension-open-tabs-next-to-current)：Open new tabs to the right of the current one
-
- - [Youku-HTML5-Player](https://github.com/esterTion/Youku-HTML5-Player)：一个适配优酷的简单易用的HTML5播放器（已停止维护）
 
 备用：
 
  - [Gesturefy](https://github.com/Robbendebiene/Gesturefy)：鼠标手势扩展
+ - [Open Tabs Next To Current](https://github.com/sblask/webextension-open-tabs-next-to-current)：Open new tabs to the right of the current one
 
-# 用户脚本UserScript
+### 用户脚本UserScript
 
- - [视频网HTML5播放小工具](https://greasyfork.org/zh-CN/scripts/30545)：启用HTML5播放；万能网页全屏；添加快捷键
-
- - [iqiyi-player-switch](https://github.com/gooyie/userscript-iqiyi-player-switch)：爱奇艺flash播放器与html5播放器切换 
+ - [HTML5视频播放工具](https://greasyfork.org/zh-CN/scripts/30545)：启用HTML5播放；万能网页全屏；添加快捷键
 
  - [Super_preloaderPlus_one_New](https://github.com/machsix/Super-preloader)：网页自动翻页  
 
@@ -153,20 +186,20 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
  - [网盘自动填写密码](https://greasyfork.org/zh-CN/scripts/29762)：智能融合网盘密码到网址中，并自动提交密码
 
  - [soTab](https://greasyfork.org/zh-CN/scripts/14856)：搜索引擎跳转，搜索引擎一键切换(修改部分样式为：`.soTab a{margin-right: 1em;}`即rem改为em即可)。备用：[Search Jump Around](https://github.com/doiyes/Firefox-Custom/blob/master/UserScript/Search%20Jump%20Around.js) 或者 [searchEngineJump](https://greasyfork.org/zh-CN/scripts/27752)   
- 
+
  - [网页限制解除](https://greasyfork.org/zh-CN/scripts/28497):解除网站禁止复制、剪切、选择文本、右键菜单的限制（黑名单版）
- 
+
  - [CSDN净化](https://greasyfork.org/zh-CN/scripts/378351)：屏蔽掉所有烦人的CSDN广告, 并自动展开内容
-  
+
  - [斗鱼清爽版](https://greasyfork.org/zh-CN/scripts/390452)：斗鱼精简，真实人数显示，默认最高画质
- 
+
  - [Bilibili Evolved](https://greasyfork.org/zh-CN/scripts/373563)：强大的哔哩哔哩增强脚本
-  
+
  - [知网下载助手](https://greasyfork.org/zh-CN/scripts/371938)：解析CNKI论文PDF格式下载地址，caj格式下载链接替换为pdf链接
 
-# UC脚本UserChromeJS
+### UC脚本UserChromeJS
 
-### 使用方法
+#### 使用方法
 
 https://github.com/Endor8/userChrome.js/tree/master/userChrome
 
@@ -177,9 +210,10 @@ config.js和userChromeJS.js放在Firefox安装根目录下；config-prefs.js放�
 ```
 pref("general.config.sandbox_enabled", false);
 ```
+
 userChrome.js 的更新：https://github.com/alice0775/userChrome.js
 
-### 自用UC脚本
+#### 自用UC脚本
 
 https://github.com/doiyes/Firefox-Custom/tree/master/userChromeJS
 
@@ -201,7 +235,7 @@ https://github.com/doiyes/Firefox-Custom/tree/master/userChromeJS
 
  - OpenNewTab.uc.js ——地址栏输入在新标签打开
 
-# CSS相关
+### CSS相关
 
 https://github.com/doiyes/Firefox-Custom/tree/master/CSS
 
@@ -215,7 +249,7 @@ https://github.com/Aris-t2/CustomCSSforFx/tree/master/classic
 
 https://github.com/coekuss/quietfox
 
-# 其他
+### 其他
 
  - [Firefox启用内置翻译-Yandex提供](https://bbs.kafan.cn/thread-2109497-1-1.html)
 
@@ -243,6 +277,7 @@ browser.translation.yandex.apiKeyOverride    自己申请 KEY
 ```
 <a href="javascript:void(0);" id="dologin" data-action="dologin" class="u-loginbtn btncolor tabfocus btndisabled" tabindex="8">登  录</a>
 ```
+
 将标签从a改为input并添加type="submit"属性，即改为
 
 ```
@@ -287,9 +322,9 @@ browser.translation.bing.clientIdOverride
 
 
 -  广告过滤规则
-  - [乘风规则](https://bbs.kafan.cn/thread-1866845-1-1.html) 精简规则、视频规则、UBO动态规则
-  - [cjxlist规则](https://github.com/cjx82630/cjxlist)  
-  - [常用广告过滤规则汇总](https://gitee.com/ADList/NoADList)  
+   - [乘风规则](https://bbs.kafan.cn/thread-1866845-1-1.html) 精简规则、视频规则、UBO动态规则
+   - [cjxlist规则](https://github.com/cjx82630/cjxlist)  
+   - [常用广告过滤规则汇总](https://gitee.com/ADList/NoADList)  
 
 
 -  全局雅黑字体
