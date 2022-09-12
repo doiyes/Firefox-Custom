@@ -59,7 +59,7 @@ Forefox配置文件自用收集整理-doiyes.com
 
 **-safe-mode** -- 安全模式启动 Firefox，或者按住 Shift 键打开 Firefox 也可以。 
 
-**-url ** -- “地址” 指定火狐启动打开某一网页 -url可以省略.例如 "D:\Program File\Firefox\firefox.exe" www.doiyes.com
+**-url** -- “地址” 指定火狐启动打开某一网页 -url可以省略.例如 "D:\Program File\Firefox\firefox.exe" www.doiyes.com
 
 更多可见：https://www.firefox.net.cn/read-54673
 
