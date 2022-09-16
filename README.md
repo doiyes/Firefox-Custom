@@ -265,15 +265,25 @@ https://github.com/coekuss/quietfox
 
 ### Firefox清理
 cache2 ——缓存
+
 jumpListCache ——任务栏跳转列表的缓存
+
 safebrowsing ——Google安全浏览相关数据
+
 startupCache ——启动缓存
+
 thumbnails ——缩略图缓存
+
 bookmarkbackups ——书签备份
+
 crashes ——崩溃报告
+
 datareporting ——诊断数据
+
 minidumps ——崩溃记录
+
 sessionstore-backups ——会话备份
+
 
 ### 其他
 
