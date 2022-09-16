@@ -19,6 +19,8 @@ Forefox配置文件自用收集整理-doiyes.com
 
 - [CSS相关](#CSS相关)
 
+- [Firefox清理](#Firefox清理)
+
 - [其他](#其他)
 
   - Firefox启用内置翻译-Yandex提供
@@ -26,7 +28,6 @@ Forefox配置文件自用收集整理-doiyes.com
   - FF内置翻译功能增强脚本
   - 全局雅黑字体
 
-  
 
 ### 下载安装
 
@@ -37,7 +38,6 @@ Forefox配置文件自用收集整理-doiyes.com
 解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。
 
 移动版(第三方iceraven)：https://github.com/fork-maintainers/iceraven-browser/releases
-
 
 ### 配置文件参数
 
@@ -101,6 +101,8 @@ security.dialog_enable_delay  将其值设置为0  扩展安装等待时间 （�
 
 破解右键限制 `dom.event.contextmenu.enabled`  双击改为false 
 
+默认不加载 userChrome.css 和 userContent.css 文件以提升启动速度 
+about:config 里面 toolkit.legacyUserProfileCustomizations.stylesheets 设置为 true 开启对这两个文件的加载。
 
 
 更多可见：https://www.firefox.net.cn/read-60535
@@ -201,15 +203,21 @@ https://github.com/pyllyukko/user.js/blob/master/user.js
 
 #### 使用方法
 
-https://github.com/Endor8/userChrome.js/tree/master/userChrome
+xiaoxiaoflood方案： https://github.com/xiaoxiaoflood/firefox-scripts
+
+fx-folder.zip解压后放在Firefox安装根目录下；utils.zip解压后放入 chrome 文件夹，UC脚本放入 chrome 文件夹。
+
+userChrome.js 的更新：
+
+https://github.com/xiaoxiaoflood/firefox-scripts/tree/master/chrome
+
+https://github.com/benzBrake/FirefoxCustomize/tree/master/userChromeJS
+
+
+
+其他方案：https://github.com/Endor8/userChrome.js/tree/master/userChrome
 
 config.js和userChromeJS.js放在Firefox安装根目录下；config-prefs.js放在 Firefox 安装根目录\defaults\pref下；UserChrome.js 放在配置文件夹\chrome下，UC脚本放入 chrome 文件夹。 
-
-注：FF62之后版本需要在 config-pref.js 加上下面的代码:
-
-```
-pref("general.config.sandbox_enabled", false);
-```
 
 userChrome.js 的更新：https://github.com/alice0775/userChrome.js
 
@@ -218,22 +226,28 @@ userChrome.js 的更新：https://github.com/alice0775/userChrome.js
 https://github.com/doiyes/Firefox-Custom/tree/master/userChromeJS
 
  - 鼠标放在标签栏自动滚动切换.uc.js ——标签栏鼠标悬停切换
-
- - AutoPopup.uc.js   ——按钮菜单自动弹出
-
- - ClearSearchTerm 1.0.uc.js  ——搜索框自动清空
-
- - LoadingBar.uc.js  ——地址栏下方显示当前页面加载进度条
-
- - MemoryMonitor.uc.js ——内存监控
-
- - DoubleClick-CloseTab.uc.js ——双击关闭标签
-
- - downloadPlus.uc.js ——下载增强
-
- - EnableAutoLogin.ucjs ——自动登录增强
-
- - OpenNewTab.uc.js ——地址栏输入在新标签打开
+ - [AddonsPage_fx72.uc.js](https://github.com/benzBrake/FirefoxCustomize/blob/master/userChromeJS/AddonsPage_fx72.uc.js) ——附件组件页面右键新增查看所在目录，详细信息页面新增安装地址或路径，新增 uc脚本管理页面
+ - [autoPlainTextLinks.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/autoPlainTextLinks.uc.js) ——自动纯文本链接
+ - [BMMultiColumn.uc.js](https://github.com/benzBrake/FirefoxCustomize/blob/master/userChromeJS/BMMultiColumn.uc.js) ——书签菜单自动分列显示
+ - [BookmarkOpt.uc.js](https://github.com/benzBrake/FirefoxCustomize/blob/master/userChromeJS/BookmarkOpt.uc.js) ——书签操作增强，添加书签到此处/更新书签，复制标题，复制Markdown格式链接，增加显示/隐藏书签工具栏按钮
+ - [contextToSearch.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/contextToSearch.uc.js) ——Search context menu entry now sends search to search box
+ - [downloadPlus_ff98.uc.js](https://github.com/benzBrake/Firefox-downloadPlus.uc.js) ——Firefox下载增强工具：默认选择下载文件、改名后保存、保存并打开、另存为、下载提示音、来源显示完整目录并支持双击复制完整地址、第三方工具下载（依赖 FlashGot
+ - [EnableAutoLogin.uc.js](https://www.firefox.net.cn/read-26401) ——允许保存登录账号和自动填写登录账号的脚本
+ - [enterSelects.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/enterSelects.uc.js)
+ - [extensionOptionsMenu.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/extensionOptionsMenu.uc.js)
+ - [masterPasswordPlus.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/masterPasswordPlus.uc.js)
+ - [mouseGestures.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/mouseGestures.uc.js)
+ - [move_reload_into_url.uc.js](https://github.com/benzBrake/FirefoxCustomize/blob/master/userChromeJS/moveReloadIntoUrl.uc.js) ——移动刷新按钮到地址栏
+ - [openInUnloadedTab.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/openInUnloadedTab.uc.js)
+ - [OpenWith.uc.js](https://github.com/benzBrake/FirefoxCustomize/blob/master/userChromeJS/OpenWith.uc.js) ——用其他浏览器打开页面、链接、书签及标签
+ - [privateTab.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/privateTab.uc.js) ——无痕标签页
+ - [QuickOpen.uc.js](https://github.com/runningcheese/RunningCheese-Firefox/blob/master/userChrome.js/QuickOpen.uc.js) ——快速打开指定选项
+ - [rebuild_userChrome.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/rebuild_userChrome.uc.js)
+ - [redirector.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/redirector.uc.js)
+ - Restart-Panelbutton.uc.js
+ - [styloaix.uc.js](https://github.com/xiaoxiaoflood/firefox-scripts/blob/master/chrome/styloaix.uc.js) ——样式管理
+ - [Tabplus.uc.js](https://github.com/benzBrake/FirefoxCustomize/blob/master/userChromeJS/TabPlus.uc.js) ——设置标签的打开方式
+ - [TranslatePlus.uc.js](https://www.firefox.net.cn/read-121267)
 
 ### CSS相关
 
@@ -248,6 +262,18 @@ https://github.com/Timvde/UserChrome-Tweaks
 https://github.com/Aris-t2/CustomCSSforFx/tree/master/classic
 
 https://github.com/coekuss/quietfox
+
+### Firefox清理
+cache2 ——缓存
+jumpListCache ——任务栏跳转列表的缓存
+safebrowsing ——Google安全浏览相关数据
+startupCache ——启动缓存
+thumbnails ——缩略图缓存
+bookmarkbackups ——书签备份
+crashes ——崩溃报告
+datareporting ——诊断数据
+minidumps ——崩溃记录
+sessionstore-backups ——会话备份
 
 ### 其他
 
