@@ -36,7 +36,7 @@ Forefox配置文件自用收集整理-doiyes.com
 官方FTP：http://archive.mozilla.org/pub/firefox/ 或 https://ftp.mozilla.org/pub/firefox/  
 
 版本选择：  
-Firefox Releases（正式版） 
+Firefox Releases（正式版）    
 Firefox ESR （长期支持版，Extended Support Release）   
 Firefox Beta （测试版）   
 Firefox Developer Edition （开发版）  
