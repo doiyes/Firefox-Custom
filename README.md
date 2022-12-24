@@ -46,7 +46,7 @@ Firefox Developer Edition （开发版）
 
 解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。
 
-移动版(第三方iceraven)：https://github.com/fork-maintainers/iceraven-browser/releases
+安卓版(推荐第三方iceraven)：https://github.com/fork-maintainers/iceraven-browser/releases
 
 ### 配置文件参数
 
