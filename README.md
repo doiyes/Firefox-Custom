@@ -63,7 +63,9 @@ Forefox配置文件自用收集整理-doiyes.com
 
 更多可见：https://www.firefox.net.cn/read-54673
 
-安装新版本后，无法使用修改配置文件夹下有个compatibility.ini的文件，改下版本号就可以了。
+安装新版本后，无法使用原配置文件夹：  
+使用 -allow-downgrade 参数启动，  
+或者删除配置文件夹中的 compatibility.ini 文件。  
 
 ### 常用设置
 
@@ -355,8 +357,6 @@ browser.translation.bing.clientIdOverride
 
 -  [分享个人总结的hosts与自带防火墙列表](https://bbs.kafan.cn/thread-2115085-1-1.html)
 
-
--  使用不同版本的配置文件时，需修改配置文件目录下的compatibility.ini文件  
 
 -  修改更新通道，修改根部目录下update-settings.ini和defaults\pref\channel-prefs.js文件
 
