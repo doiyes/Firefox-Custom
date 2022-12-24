@@ -51,24 +51,16 @@ Firefox Developer Edition （开发版）
 
 ### 配置文件参数
 
-常用命令行参数（在 Firefox 快捷方式上右键点击属性中的，启动路径后面的参数。‘-p’前有空格）：
+常用命令行参数（在 Firefox 快捷方式上右键点击属性中的，启动路径后面的参数。‘-p’前有空格）：  
+**-ProfileManager** 或 **-P** ：打开内置的配置管理器界面。  
+-**P "配置名"**：使用自定义名称的配置来启动 Firefox。如果这个配置名不存在，则打开配置管理器。如果有其他 Firefox 实例正在运行，则该参数无法生效。  
+**-no-remote**： 在 -P 后面添加这个参数，可以创建一个新的实例，实现同时使用多个Firefox 配置。如：  
+"D:\Program File\Firefox\firefox.exe" -p  
+"D:\Program File\Firefox\firefox.exe" --no-remote -profile "doiyes"  
+-no-remote -Profile "D:\Program Files\MyFirefox\Profiles"  
 
-**-ProfileManager** 或 **-P** ：打开内置的配置管理器界面。
-
--**P "配置名"**：使用自定义名称的配置来启动 Firefox。如果这个配置名不存在，则打开配置管理器。如果有其他 Firefox 实例正在运行，则该参数无法生效。
-
-**-no-remote**： 在 -P 后面添加这个参数，可以创建一个新的实例，实现同时使用多个Firefox 配置。如：
-
-"D:\Program File\Firefox\firefox.exe" -p
-
-"D:\Program File\Firefox\firefox.exe" --no-remote -profile "doiyes"
-
--no-remote -Profile "D:\Program Files\MyFirefox\Profiles"
-
-**-private** -- 始终在隐私浏览模式启动 Firefox。
-
-**-safe-mode** -- 安全模式启动 Firefox，或者按住 Shift 键打开 Firefox 也可以。 
-
+**-private** -- 始终在隐私浏览模式启动 Firefox。  
+**-safe-mode** -- 安全模式启动 Firefox，或者按住 Shift 键打开 Firefox 也可以。   
 **-url** -- “地址” 指定火狐启动打开某一网页 -url可以省略.例如 "D:\Program File\Firefox\firefox.exe" www.doiyes.com
 
 更多可见：https://www.firefox.net.cn/read.php?tid=54673  
