@@ -71,11 +71,11 @@ Firefox Developer Edition （开发版）
 
 **-url** -- “地址” 指定火狐启动打开某一网页 -url可以省略.例如 "D:\Program File\Firefox\firefox.exe" www.doiyes.com
 
-更多可见：https://www.firefox.net.cn/read-54673
+更多可见：https://www.firefox.net.cn/read.php?tid=54673  
+https://wiki.mozilla.org/Firefox/CommandLineOptions
 
-安装新版本后，无法使用原配置文件夹：  
-使用 -allow-downgrade 参数启动，  
-或者删除配置文件夹中的 compatibility.ini 文件。  
+安装新版本后，旧版本配置文件无法使用时：  
+使用 -allow-downgrade 参数启动，或者删除配置文件夹中的compatibility.ini文件。  
 
 ### 常用设置
 
