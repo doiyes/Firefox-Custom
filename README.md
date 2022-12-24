@@ -300,7 +300,6 @@ browser.translation.ui.welcomeMessageShown   true
 browser.translation.yandex.apiKeyOverride    自己申请 KEY
 ```
 
-
 完成后，重启浏览器。
 
  - [Firefox在部分网站上不提示保存密码的解决方法](https://bbs.kafan.cn/thread-2114354-1-1.html)
@@ -355,6 +354,20 @@ browser.translation.bing.clientIdOverride
 -  [DNS-over-HTTPS(DoH)+ESNI](https://bbs.kafan.cn/thread-2174452-1-1.html) 解决GitHub连接问题
 
 -  [分享个人总结的hosts与自带防火墙列表](https://bbs.kafan.cn/thread-2115085-1-1.html)
+
+
+-  使用不同版本的配置文件时，需修改配置文件目录下的compatibility.ini文件  
+
+-  修改更新通道，修改根部目录下update-settings.ini和defaults\pref\channel-prefs.js文件
+
+-  使用内建的策略(Policies)功能禁用版本更新检测：根目录下创建一个名叫distribution的子文件夹，其中新建文本文件policies.json，文档内容为：  
+```
+{
+  "policies": {
+    "DisableAppUpdate": true
+  }
+}
+```
 
 
 -  广告过滤规则
