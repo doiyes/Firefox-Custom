@@ -39,8 +39,9 @@ Forefox配置文件自用收集整理-doiyes.com
 Firefox Releases（正式版）    
 Firefox ESR （长期支持版，Extended Support Release）   
 Firefox Beta （测试版）   
-Firefox Developer Edition （开发版）  
 Firefox Nightly （每夜版）  
+Firefox Developer Edition （开发版）    
+
 发布日历：https://wiki.mozilla.org/Release_Management/Calendar
 
 解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。
