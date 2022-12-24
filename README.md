@@ -31,9 +31,17 @@ Forefox配置文件自用收集整理-doiyes.com
 
 ### 下载安装
 
-官方FTP：http://archive.mozilla.org/pub/firefox/
+官网：https://www.mozilla.org/en-US/firefox/all/  
 
-官网：https://www.mozilla.org/en-US/firefox/all/
+官方FTP：http://archive.mozilla.org/pub/firefox/ 或 https://ftp.mozilla.org/pub/firefox/  
+
+版本选择：  
+Firefox Releases（正式版） 
+Firefox ESR （长期支持版，Extended Support Release）   
+Firefox Beta （测试版）   
+Firefox Developer Edition （开发版）  
+Firefox Nightly （每夜版）  
+发布日历：https://wiki.mozilla.org/Release_Management/Calendar
 
 解压文件，复制core文件夹的内容到D:\Program File\Firefox\下即可。
 
